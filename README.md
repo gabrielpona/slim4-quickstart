@@ -65,7 +65,7 @@ O objetivo deste projeto é fornecer uma estrutura simples, organizada e reutili
 Clone o repositório:
 
 ```bash
-git clone https://github.com/github/slim4-quickstart.git
+git clone https://github.com/gabrielpona/slim4-quickstart.git
 cd slim-base
 ```
 
