@@ -15,20 +15,7 @@ O objetivo deste projeto é fornecer uma estrutura simples, organizada e reutili
 
 ---
 
-## Dependências Atuais
-
-```json
-{
-    "require": {
-        "slim/slim": "4.*",
-        "slim/psr7": "^1.8"
-    }
-}
-```
-
----
-
-## Dependências Recomendadas
+## Dependências
 
 | Pacote              | Finalidade               |
 | ------------------- | ------------------------ |
@@ -36,7 +23,9 @@ O objetivo deste projeto é fornecer uma estrutura simples, organizada e reutili
 | php-di/slim-bridge  | Integração Slim + PHP-DI |
 | vlucas/phpdotenv    | Variáveis de Ambiente    |
 | monolog/monolog     | Logging                  |
-| illuminate/database | ORM Eloquent             |
+| doctrine/orm        | Doctrine ORM             |
+| doctrine/dbal       | Doctrine DBAL            |
+| symfony/cache       | ORM Cache                |
 | slim/twig-view      | Templates Twig           |
 | firebase/php-jwt    | Autenticação JWT         |
 
@@ -48,9 +37,10 @@ O objetivo deste projeto é fornecer uma estrutura simples, organizada e reutili
 .
 ├── public/
 │   ├── .htaccess
+│   ├── bootstrap.php
 │   └── index.php
 │
-├── src/
+├── app/
 │   ├── Controllers/
 │   ├── Services/
 │   ├── Repositories/
@@ -63,7 +53,7 @@ O objetivo deste projeto é fornecer uma estrutura simples, organizada e reutili
 ├── storage/
 ├── vendor/
 │
-├── bootstrap.php
+├── .env
 ├── composer.json
 └── README.md
 ```

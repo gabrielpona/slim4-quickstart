@@ -1,0 +1,7 @@
+/nbproject/
+/vendor/
+/logs/*
+.env
+composer.lock
+composer.phar
+test-autoload.php
