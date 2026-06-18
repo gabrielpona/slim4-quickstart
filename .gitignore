@@ -1,6 +1,7 @@
 /nbproject/
 /vendor/
 /logs/*
+/cache/twig/*
 .env
 composer.lock
 composer.phar
