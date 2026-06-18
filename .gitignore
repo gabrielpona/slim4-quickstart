@@ -1,4 +1,5 @@
 /nbproject/
+/.vscode/
 /vendor/
 /logs/*
 /cache/twig/*
