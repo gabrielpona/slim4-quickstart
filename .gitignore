@@ -3,9 +3,8 @@
 /.fleet/
 /vendor/
 /logs/*
-/cache/twig/*
+/cache/*
 /var
-/cache/doctrine/*
 .env
 composer.lock
 composer.phar
