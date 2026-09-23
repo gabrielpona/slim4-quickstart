@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Domain\Read\Repositories\IUserReadRepository;
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 use Slim\Views\Twig;
@@ -9,17 +10,23 @@ use \App\Services\Auth\AuthService;
 
 
 class HomeController {
-    
     private AuthService $authService;
 
+    private IUserReadRepository $userReadRepository;
 
-    public function __construct(AuthService $authService){
+
+    public function __construct(AuthService $authService, IUserReadRepository $userReadRepository){
         $this->authService = $authService;
+        $this->userReadRepository = $userReadRepository;
     }
 
     public function index($request, $response, $args) {
 
-        $auth = $this->authService->attempt();    
+        $auth = $this->authService->attempt();
+
+        $test = $this->userReadRepository->listAll();
+
+        var_dump($test);
 
         $view = Twig::fromRequest($request);
         return $view->render($response, 'pages/public/main.twig', ['message' => 'Hello World', 'auth' => $auth]);

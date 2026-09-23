@@ -1,8 +1,10 @@
 /nbproject/
 /.vscode/
+/.fleet/
 /vendor/
 /logs/*
 /cache/twig/*
+/var/
 .env
 composer.lock
 composer.phar
