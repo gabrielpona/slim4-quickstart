@@ -4,7 +4,8 @@
 /vendor/
 /logs/*
 /cache/twig/*
-/var/
+/var
+/cache/doctrine/*
 .env
 composer.lock
 composer.phar
